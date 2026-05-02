@@ -113,10 +113,8 @@ def main():
         if not current_items:
                 st.write("The queue is currently empty.")
         else:
-                # Display as a list or a pretty arrow-separated string
                 st.write(" → ".join([str(i) for i in current_items]))
-                st.json(current_items) # Another way to visualize
-        # 4. Analisis Kompleksitas (Big-O)
+                st.json(current_items) 
         st.divider()
         st.subheader("Complexity Analysis (Big-O)")
         col1, col2, col3 = st.columns(3)
